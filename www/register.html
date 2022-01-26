@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <title>Registrar venda</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Registrar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <section class="card mt-3">
+                <div class="card-body p-4">
+                    <h1 class="text-center card-title">Registro de venda</h1>
+                    <section id="form-register">
+                        <form>
+                            <div class="card mt-4"> <!-- vendedor -->
+                                <div class="form-group card-body">
+                                    <h3 class="card-title">Vendedor</h3>
+                                    <div class="py-2">
+                                        <label for="vendedor">Nome: </label>
+                                        <input type="text" class="form-control" id="vendedor">
+                                    </div>
+                                    <div>
+                                        <label for="cpfvendedor">CPF: </label>
+                                        <input type="text" class="form-control" id="cpfvendedor">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mt-4"> <!-- cliente -->
+                                <div class="form-group card-body">
+                                    <h3 class="card-title">Cliente</h3>
+                                    <div class="py-2">
+                                        <label for="cliente">Nome: </label>
+                                        <input type="text" class="form-control" id="cliente">
+                                    </div>
+                                    <div>
+                                        <label for="cpfcliente">CPF: </label>
+                                        <input type="text" class="form-control" id="cpfcliente">
+                                    </div>
+                                    <div>
+                                        <label for="endereco">Endereço: </label>
+                                        <input type="text" class="form-control" id="endereco">
+                                    </div>
+                                    <div>
+                                        <label for="telefone">Telefone: </label>
+                                        <input type="tel" class="form-control" id="telefone">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mt-4"> <!-- Venda -->
+                                <div class="form-group card-body">
+                                    <h3 class="card-title">Venda</h3>
+                                    <div class="py-2">
+                                        <label for="data">Data: </label>
+                                        <input type="date" class="form-control" id="data">
+                                    </div>
+                                    <div>
+                                        <label for="produto">Produto: </label>
+                                        <input type="text" class="form-control" id="produto">
+                                    </div>
+                                    <div>
+                                        <label for="quantidade">Quantidade: </label>
+                                        <input type="number" class="form-control" id="quantidade">
+                                    </div>
+                                    <div>
+                                        <label for="total">Total: </label>
+                                        <input type="text" class="form-control" id="total">
+                                    </div>
+                                    <div>
+                                        <label for="obs">Observações: </label>
+                                        <textarea class="form-control" id="obs" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </section>
+
+
+
+        </div>
+
+        <script src="js/index.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
