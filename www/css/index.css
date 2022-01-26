@@ -1,0 +1,28 @@
+.boldSpan {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.edit{
+    display: inline;
+    position: absolute;
+    top: 10px;
+    right: 45px;
+}
+
+.deleteVenda{
+    display: inline;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.edit img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.deleteVenda img{
+    width: 32px;
+    cursor:pointer;
+}
