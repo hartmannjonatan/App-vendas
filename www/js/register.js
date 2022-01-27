@@ -9,12 +9,12 @@ function formSubmit() {
 
     var Venda = new Object();
 
-    confirm("Salvo!");
+    alert("Salvo!");
 
     Venda.vendedor_nome = document.getElementById("vendedor").value;
     Venda.vendedor_cpf = document.getElementById("cpfvendedor").value;
     Venda.cliente_nome = document.getElementById("cliente").value;
-    Venda.cleinte_cpf = document.getElementById("cpfcliente").value;
+    Venda.cliente_cpf = document.getElementById("cpfcliente").value;
     Venda.endereco = document.getElementById("endereco").value;
     Venda.telefone = document.getElementById("telefone").value;
     Venda.data = document.getElementById("data").value;
@@ -22,7 +22,7 @@ function formSubmit() {
     Venda.quantidade = document.getElementById("quantidade").value;
     Venda.total = document.getElementById("total").value;
     Venda.obs = document.getElementById("obs").value;
-    if(Venda.obs === null || Venda.obs === undefined){
+    if(!Venda.obs){
         Venda.obs = "Sem observação.";
     }
 

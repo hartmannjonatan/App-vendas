@@ -37,7 +37,31 @@
                     </section>
                 </div>
             </section>
+            <div class="alert alert-danger mt-3 invisible" id='null-msg'>
+                <h4 class="alert-heading">Não há vendas registradas.</h4>
+                <span>Registre pressionando o botão abaixo ou no menu de navegação.</span>
+                <hr>
+                <a href='register.html'><button type="button" class='btn btn-success w-100'>Registrar</button></a>
+            </div>
 
+            <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="Editar Venda" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalEdit">Editar Venda</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" id='formEdicao'>
+                        <!-- Aqui o js coloca o formulário de edição da venda -->
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
         </div>
