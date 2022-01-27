@@ -13,11 +13,9 @@ function listar() {
 
     var keys = Object.keys(storage);
 
-    console.log(keys.length)
     if(keys.length === 0){
         var alerta = document.getElementById('null-msg');
         alerta.classList.remove('invisible');
-        alert("aq");
     }
 
     var section = document.getElementById('vendas');
@@ -70,10 +68,11 @@ function listar() {
         section.appendChild(card);
 
         spanEdit.addEventListener('click', function() {
-            editVenda(key);
+            editVenda(this.id);
         });
+
         spanDelete.addEventListener('click', function() {
-            deleteVenda(key);
+            deleteVenda(this.id);
         });
     }
 }
